@@ -49,7 +49,7 @@
 #인공지능 그리고 머신러닝과 딥러닝  
 ---
 ### AI > Machine Learing > Deep Learning
-![Relation][(/img/relation.png)]
+![Relation](/img/relation.png)
 
 >__※ 인공지능(AI)__
 >인간이 지닌 지적 능력을 인공적으로 구현한것을 모두 인공지능이라 일컫음. 
@@ -57,7 +57,7 @@
 >__※ 머신러닝(Machine Learing)__
 >"기계학습"으로  기계가 직접 데이터를 학습 함으로서, 그 속에 숨겨진 일련의 규칙성을 찾음. 우리가 가지는 사례 형식의 데이터를 컴퓨터가 학습해, 그를 기반으로 새 데이터를 평가, 예상하고 이를 우리가 활용 할 수 있게 함.  
 
-![Machine][(/img/330px-Kernel_Machine.svg.png)]
+![Machine](/img/330px-Kernel_Machine.svg.png)
 
 예를 들면, 감기 걸린 환자들의 체온과 건강한 사람의 체온 데이터를 컴퓨터에게 학습(메모리에 저장) 한 후 특정 체온을 제시 할 때, 그 사람이 감기에 걸렸는지 여부를 판독(알고리즘에 의한 결론)으로 판독하게 하는것이 대표적인 기계 학습의 예임.
 
@@ -100,10 +100,10 @@
 >2. 주로 인공신경망 구조를 사용하여 __학습__ 한다.
 
 ###머신러닝을 통한 개와 고양이 분류  
-![Machine][(/img/machineLearning.png)]
+![Machine](/img/machineLearning.png)
 
 ###딥러닝 통한 개와 고양이 분류  
-![DeepLearn][(/img/DeepLearning.png)]
+![DeepLearn](/img/DeepLearning.png)
 
 > 딥러닝 알고리즘 목록
 > - 딥러닝(심층학습)

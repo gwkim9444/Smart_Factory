@@ -216,3 +216,8 @@ System Engineer들 사이에서는 이러한 개발과정을 `V-model`로 표시
 |`ISO 15288`| 전체 life cycle에 대한 내용을 두루두루 보고 싶다 |
 |`IEEE 1220`|설계 단계 내용을 상세하게 보고 싶다| 
 |`EIA 632`| `ISO 15288`과`IEEE 1220` 중간 정도의 구성| 
+
+
+#### Vertical Integration의 정의
+---  
+![VF](./img/vertical.png)  

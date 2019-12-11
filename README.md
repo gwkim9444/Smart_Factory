@@ -187,7 +187,7 @@ Industry4.0 보급/확산이 핵심임을 강조하며, road map을 하기와 �
 
 ##### End-to-end Engineering에 필요한 요소기술
 
-3.1 Real world와 virtual word의 통합  
+###### 3.1 Real world와 virtual word의 통합  
 실세계에서 다루는 object에 대한 distal copy(모델)을 만드는 작업 진행  
 
 이는 Labview Simulation과 유사함. Labview는 Sensor I/O를 지원하고, 물리적으로 연동된 Sensor/Controller를 컴퓨터 상에서 Model로 표현이 가능하며, 해당 Model들을 활용해 사용자가 의도한 작업을 수행함.  
@@ -195,6 +195,24 @@ Industry4.0 보급/확산이 핵심임을 강조하며, road map을 하기와 �
 ![NI](./img/labview.png)  
 __Labview에서 사용한 SCADA의 예__
 
-> 단순히, modeling에서 프로그램이 끝나는 것이 아닌, 데이터 통합 작업이 수반되어야 함. 제품 개발/제품 생산 단계에서 활용되는 데이터 항목들은 다를지어도 연계되는 항목을 고려해, 생산/설계 분야에서 협업이 이뤄지려면 작업진행을 꾸준히 해주어야 됨
+> 단순히, modeling에서 프로그램이 끝나는 것이 아닌, 데이터 통합 작업이 수반되어야 함. 제품 개발/제품 생산 단계에서 활용되는 데이터 항목들은 다를지어도 연계되는 항목을 고려해, 생산/설계 분야에서 협업이 이뤄지려면 작업진행을 꾸준히 해주어야 됨  
 
+###### 3.2 System Engineering
 
+시스템 엔지니어링은 시스템 개발시 생명 주기 전 관점에서 고려되는 모든사항을 반영하고, 다분야/학제 간 체계적이고 일관된 협력을 지향하는 방법론.  
+
+System Engineer들 사이에서는 이러한 개발과정을 `V-model`로 표시하고, 개념 스케치 및 요구사항 발굴 시 System life cycle 전체 관점을 염두해 두고 진행하게 됨.  
+
+![v-model](./img/v-model.png)  
+
+`ISO15288` 표준에서 제시되는 생명주기에 대한 활동은 위 V-model에 상에서 수행되는 행동들을 정리함  
+
+>각 Life Cycle에 대한 규격은 시스템엔지니어링 표준인 `ISO15288, EIA632, IEEE1220`을 참조해서 진행하면 될것
+
+![LFC](./img/LFC.png)  
+
+| 표 준 | Description |
+| :--------: | :--------: | 
+|`ISO 15288`| 전체 life cycle에 대한 내용을 두루두루 보고 싶다 |
+|`IEEE 1220`|설계 단계 내용을 상세하게 보고 싶다| 
+|`EIA 632`| `ISO 15288`과`IEEE 1220` 중간 정도의 구성| 

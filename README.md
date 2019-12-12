@@ -137,8 +137,8 @@ __`Industry 4.0`__
 
 ## Industry 4.0에 대한 독일의 생각  
 독일의 Industry4.0 실현방향에 대한 의견
-> bitkom - 독일 전자산업통신 협회
-> VDMA - 독일 공학 기술자 조합
+> bitkom - 독일 전자산업통신 협회  
+> VDMA - 독일 공학 기술자 조합  
 > ZVEI - 독일 전자전기산업 협회  
 
 Industry4.0 보급/확산이 핵심임을 강조하며, road map을 하기와 같이 규정 및 정의(표준화) 하였음.  
@@ -187,7 +187,7 @@ Industry4.0 보급/확산이 핵심임을 강조하며, road map을 하기와 �
 
 ##### End-to-end Engineering에 필요한 요소기술
 
-###### 3.1 Real world와 virtual word의 통합  
+###### 3.1 Real world와 virtual world의 통합  
 실세계에서 다루는 object에 대한 distal copy(모델)을 만드는 작업 진행  
 
 이는 Labview Simulation과 유사함. Labview는 Sensor I/O를 지원하고, 물리적으로 연동된 Sensor/Controller를 컴퓨터 상에서 Model로 표현이 가능하며, 해당 Model들을 활용해 사용자가 의도한 작업을 수행함.  
@@ -221,5 +221,58 @@ System Engineer들 사이에서는 이러한 개발과정을 `V-model`로 표시
 #### Vertical Integration의 정의
 ---  
 ![VF](./img/vertical.png)  
+` ISA-95(ISO/IEC 62264)` 표준 공장 계층 구조(`Sample : Amberg 공장`)
+##### __Vertical Integration__ 이란?
 
-good
+다양한 계층에 존재하는 생산 시스템 및 같은 계층 내 존재하는 생산 시스템 사이의 통신/데이터 측면에서의 통합을 이야기함.
+
+| Level | Description |
+| :--------: | :--------: | 
+|`Level 1,2`| Actuator, Sensor, Controller |
+|`Level 3`|`Manufactruing management`| 
+|`Level 4`| `Enterprise infromation systems`| 
+  
+> 하위 `Level 1` 구성요소 부터 `Level 4` 까지 통신/데이터 측면에서 __End-to-end__ 연동이 되어있다는 뜻  
+
+##### 현 Vertical Integration 의 한계  
+>`Shop Floor(제조현장)` 에 현실에 맞는 Device간의 Connection을 만들기 위해서는 기존 기업정보시스템의 인프라에서는 한계가 존재함. 각각 다른 자동화 계층 구축이 잘되 있지만, 통신네트워크단(MES) 구축 시 벤더별 다른 인터페이스 스펙(프로토콜이 다름) 활용되는 경우가 비일 비재함.  
+
+>이를 위해서 OPC(Object Linking and Embededding for Porcess Control) 표준이 개발되었으며, PLC,DCS,SCADA,MES/POP 를 벤더 독립적으로 운영이 가능하도록 되었음.  
+
+#### Network Communication for Industry 4.0  
+
+>1. ad-hoc network : 내 주위에 사물이 어떻게 배정되어 있는지에 따라 동적 네트워크를 구성할 수 있음.
+>2. 무선,유선 총 망라한 상호 운용성 : 유/무선 사이에 상호 통신이 맞도록
+프로토콜을 맞춰가는것.
+>3. 네트워크 상황에 알맞은 동적네트워크 구성 : 네트워크 상황 기반 네트워크 동적 변경을 통한 QoS 지속적 충족하는 기술
+>4. 확장성 : 배터리문제 네트워크 확장성에 대한 애로사항을 극복하기 위한 방안 확보가 필요
+>5. 보안 : 무선은 유선에 비해 피해를 받기 쉽다.  
+
+
+| list | Description |
+| :--------: | :--------: | 
+|`MEMS(Micro-electro mechanical systems) including sensors and actuator`| CPS 기능이 장착된 사물 인터넷 만들 때 활용 |
+|`Embedded systems`|라즈베리파이, 아두이노 같은 범용 시스템도 있겠지만, 특정 목적을 가지고 개발된 시스템| 
+|`power electronics`| actuator를 얼마나 전력을 최소로 소모하면서 가동할 수 있는지에 대해 연구합니다. 거듭 말했지만, 사물인터넷에서는 저전력이 중요| 
+|`Radio communication(low power, low latency)`| 저전력 저 지연시간 |  
+
+##### Industry 4.0 의 Reference Architecture : 배경 및 목적  
+
+1. Reference Architecture가 만들어진 배경  
+>Industry 4.0 와 맞물리면서 수많은 단체에서 각자의 전공/주력 분야에서의 경험을 바탕으로 표준 및 기술들을 개발 했으나, 소통없는 기술로 표준을 정하는것 자체가 무의미했으며, 이에따라 Industry 4.0 platform의 참조 아키텍처를 개발하고 다양한 기관들이 공유하게 함으로서, 개발 결과물이 참조 아키텍처 상에 반영될 수 있도록 하였음.  
+
+![RM](./img/Rami.png)  
+아키텍쳐가 개발되기 이전에도 이미 일련의 표준들은 쭉 존재해 왔으나, 전체 Industry 4.0 View 중 일부만 반영향 경향이 있었으며 이에 RAMI4.0이 등장함.  
+
+##### Reference architecture model for industry 4.0(RAMI 4.0)의 제정 및 목적  
+앞서 말한 이유로 인해 Bitkom, VDMA, ZVEI, VDI 같은 독일 내 유력기관과 IEC, ISO 같은 세계적인 표준화 협회, 그리고 우리나라의 KS와 같은 독일 내 표준을 제정하는 기관인 DKE,DIN이 모여 __RAMI 4.0__ 을 제시하게 된다.
+
+##### RAMI 4.0의 목적  
+__산재되어있는 표준과 요소기술을 종합해 정리해 세계 모든 기관들이 해당 기준을 따르도록 요구__  
+>1. 기 존재하고 있는 표준의 확인  
+>2. 특정 부분을 관장하는 여러 표준 간 차이를 줄여나가고, 허점을 매우기  
+>3. 특정 부분을 관장하는 여러 표준 중, 좋은 Solution 발굴 및 종합  
+>4. Industry 4.0의 Use Case 발굴 및 이의 반영  
+>5. 다양한 요소기술들의 확인 및 반영  
+
+

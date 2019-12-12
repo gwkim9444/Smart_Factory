@@ -275,4 +275,20 @@ __산재되어있는 표준과 요소기술을 종합해 정리해 세계 모든
 >4. Industry 4.0의 Use Case 발굴 및 이의 반영  
 >5. 다양한 요소기술들의 확인 및 반영  
 
+![RM](./img/Rami4.0.png)  
 
+__Vertical Integration은 해당 Architecture에 Layer와 Hierarchy Levels로 표현되어 있다.__  
+
+## RAMI 4.0 Layer 란?
+    2.1 RAMI에서 언급하는 Layer란?
+> RAMI에서 얘기하는 Layer란, 제조기업을 이루는 모든 요소(shop,floor devices,PLC,DCS,SCADA,정보시스템 등)에서 나오는 데이터/정보를 취득하고, 이들간에 정보가 자유롭게 활용 할 수 있게 하는 것을 추상화로 표현한것
+
+컴퓨터 네트워크 관련 이론의 배경이 OSI Model 인것처럼, RAMI 역시 제조기업에 적용한 모델이라 할 수 있음. __`OSI Model의 각 계층은 컴퓨터 하나하나 마다 있는것 처럼`__ , RAMI 역시 __`제조기업을 이루는 모든 요소 각각에 각 계층이 있다`__ 고 보면 됨.
+
+    2.2 RAMI는 왜 Layer 인가요?
+> Layer 형태로 표현하는것은 다음과 같은 의미가 있다. 실제 우리가 RAMI Architecture에 기반하여 실 공장을 구현했다 치면, 만약 어떤 하나의 PLC에 지원하는 정보 모델이라던지 통신 프로토콜이 바뀔때 ( RAMI Layer 중 하나가 바뀔때 ) __호환문제가 발생하지 않고 상호 운용성을 확보한 채 무난히 돌아가는것을 의미한다.__  
+
+![RM](./img/Detail_RAMI.png)  
+
+    2.3 RAMI Layer Structure
+> 

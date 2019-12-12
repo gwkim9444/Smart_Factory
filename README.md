@@ -46,7 +46,7 @@
 >2. 자사에 도입된 시범라인은 __`스마트팩토리 솔루션`__ 의 토대이며, 이를 바탕으로 __`솔루션 영업 인프라 확보와 시범기술과 마케팅으로 활용 해 자사 내 성장동력 확보를 얻는데 목적으로 한다.`__   
 
 
-#인공지능 그리고 머신러닝과 딥러닝
+# 인공지능 그리고 머신러닝과 딥러닝
 ---
 ### AI > Machine Learing > Deep Learning
 ![Relation](./img/relation.png)
@@ -221,3 +221,5 @@ System Engineer들 사이에서는 이러한 개발과정을 `V-model`로 표시
 #### Vertical Integration의 정의
 ---  
 ![VF](./img/vertical.png)  
+
+good

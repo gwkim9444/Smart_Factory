@@ -302,3 +302,12 @@ __Vertical Integration은 해당 Architecture에 Layer와 Hierarchy Levels로 �
 |`Business Layer`| layer에서 horizontal integration이 이뤄지는 바탕 | 
 |`Information Layer`| Functional Layer에서 제공하는  model들을 받아, 이들을 활용하여 각 business 기능에 맞는 workflow를 만든다 |  
 
+## OPC UA 
+
+#### What is OPC UA?
+> 1. OPC is the protocol begin with 1995 when Window 95 came out.
+> 2. For the first time OPC protocol starts `Classic OPC` which was based on COM/DCOM
+
+#### The Purpose of OPC UA
+
+![RM](.img/../img/purpose_opc.png)
